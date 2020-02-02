@@ -4,7 +4,7 @@ const auth = require('../../middleware/auth');
 const jwt = require('jsonwebtoken');
 const config = require('config');
 const { check, validationResult } = require('express-validator');
-const bcrypt = require('bcryptjs');
+const bcrypt = require('bcrypt');
 
 const User = require('../../models/User');
 
@@ -50,6 +50,7 @@ router.post(
                 });
             }
 
+            //BCRYPTJS & BCRYPT
             const isMatch = await bcrypt.compare(password, user.password);
 
             if (!isMatch) {

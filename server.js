@@ -7,7 +7,8 @@ const app = express();
 connectDB();
 
 //Initialize middleware
-app.use(express.json({ extended: false }));
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
 
 app.get('/', (req, res) => res.send('API Running'));
 
