@@ -1,4 +1,6 @@
 {
-  "mongoURI": "mongodb+srv://aizharjohn:lastbreed1@devconnector-ipgug.mongodb.net/test?retryWrites=true&w=majority",
-  "jwtSecret": "mysecrettoken"
+    "mongoURI": "mongodb+srv://aizharjohn:lastbreed1@devconnector-ipgug.mongodb.net/test?retryWrites=true&w=majority",
+    "jwtSecret": "mysecrettoken",
+    "githubClientId": "9187a207938ba559aa07",
+    "githubSecret": "cbf466d23100e5996d27dfd940589918383c52c1"
 }
